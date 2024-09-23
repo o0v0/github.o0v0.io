@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
+    <link rel="icon" href="https://pic2.ziyuan.wang/user/0w0/2024/09/ri_d8a069a00605f.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="![richang](https://pic2.ziyuan.wang/user/0w0/2024/08/we_3c8f107f1779a.png)
+Aurora 是一款动漫风格博客主题，基于 Vue 开发，使用开源的 Github Api 服务，开发至今一直以为主题无人问津，近来有人问起如何食用，故忙里偷闲摸一篇简单食用文档。">
+<meta property="og:title" content="Aurora - 食用指南">
+<meta property="og:description" content="![richang](https://pic2.ziyuan.wang/user/0w0/2024/08/we_3c8f107f1779a.png)
+Aurora 是一款动漫风格博客主题，基于 Vue 开发，使用开源的 Github Api 服务，开发至今一直以为主题无人问津，近来有人问起如何食用，故忙里偷闲摸一篇简单食用文档。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://o0v0.github.io/post/Aurora%20-%20-shi-yong-zhi-nan.html">
+<meta property="og:image" content="https://pic2.ziyuan.wang/user/0w0/2024/09/ty_bbbc9b31e4d8f.png">
+<title>Aurora - 食用指南</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">Aurora - 食用指南</h1>
+<div class="title-right">
+    <a href="https://o0v0.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/o0v0/o0v0.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/115fefe58f61ee0fa1174fbbb9c1fd3dabf5df107b0449c5b7f5e709f7511a55/68747470733a2f2f706963322e7a697975616e2e77616e672f757365722f3077302f323032342f30382f77655f336338663130376631373739612e706e67"><img src="https://camo.githubusercontent.com/115fefe58f61ee0fa1174fbbb9c1fd3dabf5df107b0449c5b7f5e709f7511a55/68747470733a2f2f706963322e7a697975616e2e77616e672f757365722f3077302f323032342f30382f77655f336338663130376631373739612e706e67" alt="richang" data-canonical-src="https://pic2.ziyuan.wang/user/0w0/2024/08/we_3c8f107f1779a.png" style="max-width: 100%;"></a><br>
+Aurora 是一款动漫风格博客主题，基于 Vue 开发，使用开源的 Github Api 服务，开发至今一直以为主题无人问津，近来有人问起如何食用，故忙里偷闲摸一篇简单食用文档。</p>
+<p>相较于 Wordpress 和 Typecho 等博客框架，Aurora 主题最大的优势就是简单轻量与免费，全部使用现有开源免费服务，相对稳定，也不怕 Github 跑路（笑），文章发布与更新也是相当简单，不需要操作服务器与数据库，对新人来说非常友好。</p>
+<h2>初始化环境</h2>
+<p>在食用 Aurora 主题之前，需先安装 Nodejs 和 Git 环境，这两步不必细说。环境安装完毕，由于 Aurora 使用 vue 开发，所以需要安装 <code class="notranslate">vue-cli</code>。</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">npm install -g @vue/cli-service-global</pre></div>
+<p>然后将主题 clone 到本地并安装依赖包：</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate"><span class="pl-c"><span class="pl-c">#</span> clone 主题</span>
+git clone git@github.com:chanshiyucx/aurora.git
+
+<span class="pl-c"><span class="pl-c">#</span> 进入主题目录</span>
+<span class="pl-c1">cd</span> aurora
+
+<span class="pl-c"><span class="pl-c">#</span> 安装依赖包</span>
+npm install
+
+<span class="pl-c"><span class="pl-c">#</span> 本地预览</span>
+npm start</pre></div>
+<p>依赖包安装完毕，便可执行 <code class="notranslate">npm start</code> 本地预览效果，访问 <code class="notranslate">http://localhost:8080/</code>, 当然现在看到的是我的博客，接下来需要我们自定义主题。</p>
+<h2>替换站点标题和图标</h2>
+<p>首先修改站点标题和图标，替换主题目录 <code class="notranslate">public/assets</code> 下的图标资源，然后修改 <code class="notranslate">public/index.html</code> 的站点标题和描述，同时注意修改 <code class="notranslate">manifest.json</code> 标题。</p>
+<h2>配置主题</h2>
+<p>主题配置文件为根目录下 <code class="notranslate">src/config.js</code>，里面每个配置项皆有详细注释，这里对一些基本配置项做简要说明。</p>
+<h3>配置文章仓库</h3>
+<p>Aurora 使用 Github api 做后台数据托管。所以需要新建一个仓库来存放文章和一些自定义页面内容。这里新建一个仓库取名为 Blog 为例。</p>
+<p>由于 Github api 有访问次数限制，所以需要申请 token 来解除访问限制，<a href="https://github.com/settings/tokens/new">申请地址戳这里</a>。将申请的 token 从中间随意拆成两部分填入配置项，拆分的目的避免代码提交的时候 github 对其进行检测，导致 token 失效。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/o0v0/o0v0/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image.png"><img src="https://raw.githubusercontent.com/o0v0/o0v0/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image.png" alt="Github Token" style="max-width: 100%;"></a></p>
+<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-c">// github 用户名</span>
+<span class="pl-s1">username</span>: <span class="pl-s">'chanshiyucx'</span><span class="pl-kos">,</span>
+<span class="pl-c">// 仓库地址</span>
+<span class="pl-s1">repository</span>: <span class="pl-s">'blog'</span><span class="pl-kos">,</span>
+<span class="pl-c">// token 从中间任意位置拆开成两部分，避免 github 代码检测失效</span>
+<span class="pl-s1">token</span>: <span class="pl-kos">[</span><span class="pl-s">'0ad1a0539c5b96fd18fa'</span><span class="pl-kos">,</span> <span class="pl-s">'aaafba9c7d1362a5746c'</span><span class="pl-kos">]</span><span class="pl-kos">,</span></pre></div>
+<h3>配置 Leancloud</h3>
+<p>Aurora 主题的文章阅读次数与 Valine 评论系统都是采用 <a href="https://leancloud.cn/" rel="nofollow">Leancloud</a> 存储。注册一个 Leancloud 账号并新建一个应用，将应用 key 填入相应配置项。 <strong>然后创建三个 Class，Comment 用来存储游客评论、Counter 用来存储文章热度、Visitor 用来统计友链访问次数，注意新建时选择表的访问权限无限制。</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(1).png?raw=true"><img src="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(1).png?raw=true" alt="Leancloud_应用_Key" style="max-width: 100%;"></a></p>
+<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-c">/**</span>
+<span class="pl-c"> * leancloud 配置 【文章浏览次数】</span>
+<span class="pl-c"> */</span>
+leancloud: <span class="pl-kos">{</span>
+  <span class="pl-c1">appId</span>: <span class="pl-s">'b6DWxsCOWuhurfp4YqbD5cDE-gzGzoHsz'</span><span class="pl-kos">,</span>
+  <span class="pl-c1">appKey</span>: <span class="pl-s">'h564RR5uVuJV5uSeP7oFTBye'</span>
+<span class="pl-kos">}</span></pre></div>
+<blockquote>
+<p>LeanCloud 中国版 2019 年 10 月份后开始停止为不绑定自有域名的应用服务，所以需要将节点切换到国际版。</p>
+</blockquote>
+<h3>配置 Gitalk</h3>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。其原理的文章存储是一样的，详细介绍见<a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">官方文档</a>。</p>
+<p>首先需要申请 <a href="https://github.com/settings/applications/new">GitHub Application</a>，跳转地址填写你的博客域名，如果你使用 github pages 来托管你的网站，你也可以使用 <code class="notranslate">https://chanshiyucx.github.io</code> 域名。最后将生成的 <code class="notranslate">Client ID</code> 和 <code class="notranslate">Client Secret</code> 填入相应配置项。<strong>在开发环境调试时 Gitlak 无法展示是正常现象，发布到线上后会正常显示。</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(2).png?raw=true"><img src="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(2).png?raw=true" alt="申请 GitHub Application" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(3).png?raw=true"><img src="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(3).png?raw=true" alt="生成 clientID 和 clientSecret" style="max-width: 100%;"></a></p>
+<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-c">/**</span>
+<span class="pl-c"> * Gittalk 配置【评论功能】</span>
+<span class="pl-c"> */</span>
+gitalk: <span class="pl-kos">{</span>
+  <span class="pl-c1">clientID</span>: <span class="pl-s">'864b1c2cbc4e4aad9ed8'</span><span class="pl-kos">,</span>
+  <span class="pl-c1">clientSecret</span>: <span class="pl-s">'6ca16373efa03347e11a96ff92e355c5cea189bb'</span><span class="pl-kos">,</span>
+  <span class="pl-c1">repo</span>: <span class="pl-s">'Comment'</span><span class="pl-kos">,</span> <span class="pl-c">// 你的评论仓库</span>
+  <span class="pl-c1">owner</span>: <span class="pl-s">'chanshiyucx'</span><span class="pl-kos">,</span> <span class="pl-c">// 你的 github 账户</span>
+  <span class="pl-c1">admin</span>: <span class="pl-kos">[</span><span class="pl-s">'chanshiyucx'</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c">// 你的 github 账户</span>
+  <span class="pl-c1">distractionFreeMode</span>: <span class="pl-c1">false</span> <span class="pl-c">// 是否开始无干扰模式【背景遮罩】</span>
+<span class="pl-kos">}</span></pre></div>
+<p>到此为止，所有主要的配置项皆已完成，剩下的几个配置项非常简单，相信你自己可以配置完善。</p>
+<h2>页面模板</h2>
+<p>为了更好地定制各个页面的展示效果，Aurora 约定一些页面格式以便内容能够正确解析。主要约定 <code class="notranslate">文章、书单、友链、关于</code> 四个页面内容模板。模板参考 <a href="https://github.com/chanshiyucx/blog/issues">蝉時雨の Issues</a>。</p>
+<h3>文章模板</h3>
+<p>文章模板没有太多的格式约束，只需要在文章正文顶部加上封面配图即可，配图采用的是 markdown 的注释语法，所以并不会在正文里渲染，以后即使你更换博客主题，也不会影响内容的展示。</p>
+<div class="highlight highlight-text-md"><pre class="notranslate"><span class="pl-s">[</span><span class="pl-en">pixiv: 41652582</span><span class="pl-s">]</span>: <span class="pl-corl">#</span> <span class="pl-s">"</span><span class="pl-s">/IMAGES/bg/3.jpg</span><span class="pl-s">"</span></pre></div>
+<p>由于博客的文章、友链、书单、关于、心情等内容都放在 issues 里，所以需要对它们进行区分，这里主要使用 <code class="notranslate">issues 状态</code>与 <code class="notranslate">Labels</code> 进行分类。</p>
+<p>首先需要规定的是<strong>文章的 issues 状态都是 <code class="notranslate">open</code> 的，友链、书单、关于、心情页面的 issues 内容都是 <code class="notranslate">closed</code> 状态的</strong>。</p>
+<p>新建文章的时候 <code class="notranslate">Labels</code> 表示文章标签，<code class="notranslate">Milestone</code> 代表文章的分类，同时在文章正文顶部使用 markdown 注释来设置文章封面图，如下所示：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(4).png?raw=true"><img src="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(4).png?raw=true" alt="文章模板" style="max-width: 100%;"></a></p>
+<p>Tips：通过给正文图片预设尺寸可以获得更流畅的图片加载效果，尺寸设置形如 <code class="notranslate">?vw=1920&amp;vh=1080</code>，举个栗子：</p>
+<div class="highlight highlight-text-md"><pre class="notranslate"><span class="pl-s">[</span>预设尺寸<span class="pl-s">]</span><span class="pl-s">(</span><span class="pl-corl">/IMAGES/bg.png?vw=1920&amp;vh=1080</span><span class="pl-s">)</span></pre></div>
+<h3>心情模板</h3>
+<p>注意心情 issues 状态是 <code class="notranslate">closed</code> 的，且需要打上 <code class="notranslate">Inspiration</code> 的 Labels，其他不做约束。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(5).png?raw=true"><img src="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(5).png?raw=true" alt="书单、友链、关于标签" style="max-width: 100%;"></a></p>
+<h3>友链模板</h3>
+<p>友链页面使用空行做分割，内容示例如下：</p>
+<pre lang="text" class="notranslate"><code class="notranslate">## 阁子
+
+link: //newdee.cf/
+cover: //i.loli.net/2018/12/15/5c14f329b2c88.png
+avatar: //i.loli.net/2018/12/15/5c14f3299c639.jpg
+</code></pre>
+<h3>书单模板</h3>
+<p>书单页面使用空行做分割，内容示例如下：</p>
+<pre lang="text" class="notranslate"><code class="notranslate">## ES6 标准入门
+
+author: 阮一峰
+published: 2017-09-01
+progress: 正在阅读...
+rating: 5,
+postTitle: ES6 标准入门
+postLink: //chanshiyu.com/#/post/12
+cover: //chanshiyu.com/yoi/2019/ES6-标准入门.jpg
+link: //www.duokan.com/book/169714
+description: 柏林已经来了命令，阿尔萨斯和洛林的学校只许教 ES6 了...他转身朝着黑板，拿起一支粉笔，使出全身的力量，写了两个大字：“ES6 万岁！”（《最后一课》）。
+</code></pre>
+<h3>关于模板</h3>
+<p>关于页面以 <code class="notranslate">## 段落</code> 拆分，其他不做约束。</p>
+<h3>添加分类</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(6).png?raw=true"><img src="https://github.com/o0v0/o0v0/blob/main/Aurora%20%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/image%20(6).png?raw=true" alt="添加分类" style="max-width: 100%;"></a></p>
+<h2>部署</h2>
+<p>Aurora 2.0 添加一键部署功能，只需要编辑 <code class="notranslate">build.sh</code>，配置自己的仓库和域名，之后命令行执行 <code class="notranslate">./build.sh</code>，即可自动打包并上传到指定仓库，将该仓库开启 <code class="notranslate">Github Pages</code> 功能即可在线访问。相关文档参考<a href="https://cli.vuejs.org/zh/guide/deployment.html#now" rel="nofollow">自动部署</a>。</p>
+<p>Just enjoy it💦</p></div>
+<div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://o0v0.github.io">日常</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("09/16/2024"!=""){
+    var startSite=new Date("09/16/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","o0v0/o0v0.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
