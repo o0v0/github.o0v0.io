@@ -109,11 +109,6 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-
 
 
 
-❤️ 转载文章请注明出处，谢谢！❤️
-
-
-
-
 
 
 
