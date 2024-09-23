@@ -171,4 +171,4 @@ description: 柏林已经来了命令，阿尔萨斯和洛林的学校只许教 
 
 Aurora 2.0 添加一键部署功能，只需要编辑 `build.sh`，配置自己的仓库和域名，之后命令行执行 `./build.sh`，即可自动打包并上传到指定仓库，将该仓库开启 `Github Pages` 功能即可在线访问。相关文档参考[自动部署](https://cli.vuejs.org/zh/guide/deployment.html#now)。
 
-Just enjoy it! 😃
+Just enjoy it💦
