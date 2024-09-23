@@ -72,31 +72,33 @@ Debian 系统上，cron 是默认安装的。但是，如果您的计算机上�
 apt-get update
 
 apt-get install cron
-
-curl https://get.acme.sh | sh
-
-~/.acme.sh/acme.sh --register-account -m example@xx.com（替换成自己的邮箱）
 ```
 
 ```css
 3、开始申请证书
 
+curl https://get.acme.sh | sh
+
+~/.acme.sh/acme.sh --register-account -m example@xx.com（替换成自己的邮箱）
+
 ~/.acme.sh/acme.sh --issue -d 域名 --standalone   
 #替换成自己解析好的域名，注意前后要有空格
 ```
+
 ```css
 4、安装证书
-
 
 ~/.acme.sh/acme.sh --installcert -d 域名 --key-file /root/private.key --fullchain-file /root/cert.crt    
 #部分替换成自己解析好的域名，注意前后要有空格
 #刷新Fianlshell窗口，在root目录下可看到证书公钥/root/cert.crt及验证文件/root/private.ke
 ```
+
 ```css
 5、安装Xray面板，项目地址：【[点击进入](https://github.com/vaxilu/x-ui)】
 
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 ```
+
 ```css
 7、BBR加速，项目地址：【[点击进入](https://github.com/Chikage0o0/Linux-NetSpeed)】
 

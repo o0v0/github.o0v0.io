@@ -167,17 +167,16 @@ ovz，lxc虚拟化的vps，在纯净系统首次安装后内存占用约为27m�
 
 <span class="pl-ent">apt-get</span> <span class="pl-ent">update</span>
 
-<span class="pl-ent">apt-get</span> <span class="pl-ent">install</span> <span class="pl-ent">cron</span>
+<span class="pl-ent">apt-get</span> <span class="pl-ent">install</span> <span class="pl-ent">cron</span></pre></div>
+<div class="highlight highlight-source-css"><pre class="notranslate">3、开始申请证书
 
 <span class="pl-ent">curl</span> <span class="pl-ent">https</span><span class="pl-kos">:</span><span class="pl-c1">/</span><span class="pl-c1">/</span><span class="pl-c1">get</span>.<span class="pl-c1">acme</span>.<span class="pl-c1">sh</span> | <span class="pl-ent">sh</span>
 
-<span class="pl-c1">~</span><span class="pl-c1">/</span>.<span class="pl-c1">acme</span>.<span class="pl-c1">sh</span><span class="pl-c1">/</span><span class="pl-ent">acme</span>.<span class="pl-c1">sh</span> <span class="pl-ent">--register-account</span> <span class="pl-ent">-m</span> <span class="pl-ent">example</span><span class="pl-k">@xx</span>.<span class="pl-c1">com</span>（替换成自己的邮箱）</pre></div>
-<div class="highlight highlight-source-css"><pre class="notranslate">3、开始申请证书
+<span class="pl-c1">~</span><span class="pl-c1">/</span>.<span class="pl-c1">acme</span>.<span class="pl-c1">sh</span><span class="pl-c1">/</span><span class="pl-ent">acme</span>.<span class="pl-c1">sh</span> <span class="pl-ent">--register-account</span> <span class="pl-ent">-m</span> <span class="pl-ent">example</span><span class="pl-k">@xx</span>.<span class="pl-c1">com</span>（替换成自己的邮箱）
 
 <span class="pl-c1">~</span><span class="pl-c1">/</span>.<span class="pl-c1">acme</span>.<span class="pl-c1">sh</span><span class="pl-c1">/</span><span class="pl-ent">acme</span>.<span class="pl-c1">sh</span> <span class="pl-ent">--issue</span> <span class="pl-ent">-d</span> 域名 <span class="pl-ent">--standalone</span>   
 <span class="pl-kos">#</span>替换成自己解析好的域名，注意前后要有空格</pre></div>
 <div class="highlight highlight-source-css"><pre class="notranslate">4、安装证书
-
 
 <span class="pl-c1">~</span><span class="pl-c1">/</span>.<span class="pl-c1">acme</span>.<span class="pl-c1">sh</span><span class="pl-c1">/</span><span class="pl-ent">acme</span>.<span class="pl-c1">sh</span> <span class="pl-ent">--installcert</span> <span class="pl-ent">-d</span> 域名 <span class="pl-ent">--key-file</span> <span class="pl-c1">/</span><span class="pl-ent">root</span><span class="pl-c1">/</span><span class="pl-ent">private</span>.<span class="pl-c1">key</span> <span class="pl-ent">--fullchain-file</span> <span class="pl-c1">/</span><span class="pl-c1">root</span><span class="pl-c1">/</span><span class="pl-c1">cert</span>.<span class="pl-c1">crt</span>    
 <span class="pl-kos">#</span>部分替换成自己解析好的域名，注意前后要有空格
