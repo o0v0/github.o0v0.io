@@ -1,4 +1,6 @@
-![richang](https://pic2.ziyuan.wang/user/0w0/2024/08/ri%20_1__d559e5ab89701.jpg)
+<p align="center">
+  <a href="我身处俗世 昨日如观花"><img src="https://pic2.ziyuan.wang/user/0w0/2024/08/ri%20_1__d559e5ab89701.jpg?raw=true">
+</a></p>
 支持多协议多用户的 xray 面板
 适配Alpine linux 使用F大编译的x-ui
 支持的协议：vmess、vless、trojan、shadowsocks、dokodemo-door、socks、http
