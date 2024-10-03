@@ -10,92 +10,92 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="**群晖设置**
-使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager
+<meta name="description" content="### 群晖设置
+**使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager**
 ![套件中心](https://tc.xinju.eu/lc/2024/10/02/66fc55212f206.webp)
-按照以下操作设置注册表
+**按照以下操作设置注册表**
 ![注册表](https://tc.xinju.eu/lc/2024/10/02/66fc56872592d.webp)
-点击新增
+**点击新增**
 ![新增](https://tc.xinju.eu/lc/2024/10/02/66fc587b4d991.webp)
-设置注册表名称以及注册表URL，用户名及密码留空，最后点击应用
+**设置注册表名称以及注册表URL，用户名及密码留空，最后点击应用**
 
-注册表地址，请联系网站管理员获取
+**注册表地址，请联系网站管理员获取**
 
-可用注册表：https://fsu.hub.xinju.eu
+**可用注册表：https://fsu.hub.xinju.eu**
 ![注册表地址](https://tc.xinju.eu/lc/2024/10/02/66fc598c6b917.webp)
-然后返回选择刚刚新建的注册表，点击使用，然后关闭窗口
+**然后返回选择刚刚新建的注册表，点击使用，然后关闭窗口**
 ![使用](https://tc.xinju.eu/lc/2024/10/02/66fc5c4fcbb91.webp)
 
-**下载镜像**
-_方法一_
-在Container Manager中，选择注册表，并在右上角点击搜索，搜索自己需要的镜像，如果有，则可以将镜像下载到本地进行使用，如果没有，请参照方法2
+### 下载镜像
+**方法一**
+**在Container Manager中，选择注册表，并在右上角点击搜索，搜索自己需要的镜像，如果有，则可以将镜像下载到本地进行使用，如果没有，请参照方法2**
 ![下载镜像](https://tc.xinju.eu/lc/2024/10/03/66fe81feca272.webp)
-_方法二_
-在Container Manager中，点击映像，依次点击操作，选择导入从URL添加
+**方法二**
+**在Container Manager中，点击映像，依次点击操作，选择导入从URL添加**
 ![从URL添加](https://tc.xinju.eu/lc/2024/10/03/66fe82df97f24.webp)
-在这个界面中，我们需要添加镜像的地址，进行下载，镜像的地址需要按照下面的操作进行获取
+**在这个界面中，我们需要添加镜像的地址，进行下载，镜像的地址需要按照下面的操作进行获取**
 ![获取](https://tc.xinju.eu/lc/2024/10/03/66fe835245256.webp)
-在浏览器中，我们需要打开这个网页，https://hub.docker.com/，由于国内网络不稳定的原因，请大家自备魔法上网
+**在浏览器中，我们需要打开这个网页，https://hub.docker.com/，由于国内网络不稳定的原因，请大家自备魔法上网**
 
-按照图片所示，搜索你需要的镜像名称，图片中是以Alist举例，输入你需要的镜像名称后回车即可
+**按照图片所示，搜索你需要的镜像名称，图片中是以Alist举例，输入你需要的镜像名称后回车即可**
 ![https://hub.docker.com/](https://tc.xinju.eu/lc/2024/10/03/66fe84f9825ce.webp)
-然后找到你需要的镜像地址，点击进去，图片以Alist举例
+**然后找到你需要的镜像地址，点击进去，图片以Alist举例**
 ![Alist举例](https://tc.xinju.eu/lc/2024/10/03/66fe85a00c660.webp)
-进入过后，在项目地址的左上方或者右下方的Docker Pull中复制项目地址，项目地址一般都是以xxx/xxx的形式表现
+**进入过后，在项目地址的左上方或者右下方的Docker Pull中复制项目地址，项目地址一般都是以xxx/xxx的形式表现**
 ![Docker Pull中复制项目地址](https://tc.xinju.eu/lc/2024/10/03/66fe86314720f.webp)
-得到项目地址过后，用镜像源和项目地址拼接下载镜像，以文档中提到的镜像地址举例
+**得到项目地址过后，用镜像源和项目地址拼接下载镜像，以文档中提到的镜像地址举例**
 
-拼接过后的下载地址：https://fsu.hub.xinju.eu/xhofe/alist
+**拼接过后的下载地址：https://fsu.hub.xinju.eu/xhofe/alist**
 
-其中xhofe/alist就是https://hub.docker.com中Alist的项目地址，https://fsu.hub.xinju.eu/就是镜像源地址
+**其中xhofe/alist就是https://hub.docker.com中Alist的项目地址，https://fsu.hub.xinju.eu/就是镜像源地址**
 
-然后回到Container Manager中，将拼接过后的地址，填入Hub 页面或存储库 URL中，在点击导入
+**然后回到Container Manager中，将拼接过后的地址，填入Hub 页面或存储库 URL中，在点击导入**
 ![](https://tc.xinju.eu/lc/2024/10/03/66fe835245256.webp)
 
 
 
 。">
 <meta property="og:title" content="群晖Docker镜像源使用方法">
-<meta property="og:description" content="**群晖设置**
-使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager
+<meta property="og:description" content="### 群晖设置
+**使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager**
 ![套件中心](https://tc.xinju.eu/lc/2024/10/02/66fc55212f206.webp)
-按照以下操作设置注册表
+**按照以下操作设置注册表**
 ![注册表](https://tc.xinju.eu/lc/2024/10/02/66fc56872592d.webp)
-点击新增
+**点击新增**
 ![新增](https://tc.xinju.eu/lc/2024/10/02/66fc587b4d991.webp)
-设置注册表名称以及注册表URL，用户名及密码留空，最后点击应用
+**设置注册表名称以及注册表URL，用户名及密码留空，最后点击应用**
 
-注册表地址，请联系网站管理员获取
+**注册表地址，请联系网站管理员获取**
 
-可用注册表：https://fsu.hub.xinju.eu
+**可用注册表：https://fsu.hub.xinju.eu**
 ![注册表地址](https://tc.xinju.eu/lc/2024/10/02/66fc598c6b917.webp)
-然后返回选择刚刚新建的注册表，点击使用，然后关闭窗口
+**然后返回选择刚刚新建的注册表，点击使用，然后关闭窗口**
 ![使用](https://tc.xinju.eu/lc/2024/10/02/66fc5c4fcbb91.webp)
 
-**下载镜像**
-_方法一_
-在Container Manager中，选择注册表，并在右上角点击搜索，搜索自己需要的镜像，如果有，则可以将镜像下载到本地进行使用，如果没有，请参照方法2
+### 下载镜像
+**方法一**
+**在Container Manager中，选择注册表，并在右上角点击搜索，搜索自己需要的镜像，如果有，则可以将镜像下载到本地进行使用，如果没有，请参照方法2**
 ![下载镜像](https://tc.xinju.eu/lc/2024/10/03/66fe81feca272.webp)
-_方法二_
-在Container Manager中，点击映像，依次点击操作，选择导入从URL添加
+**方法二**
+**在Container Manager中，点击映像，依次点击操作，选择导入从URL添加**
 ![从URL添加](https://tc.xinju.eu/lc/2024/10/03/66fe82df97f24.webp)
-在这个界面中，我们需要添加镜像的地址，进行下载，镜像的地址需要按照下面的操作进行获取
+**在这个界面中，我们需要添加镜像的地址，进行下载，镜像的地址需要按照下面的操作进行获取**
 ![获取](https://tc.xinju.eu/lc/2024/10/03/66fe835245256.webp)
-在浏览器中，我们需要打开这个网页，https://hub.docker.com/，由于国内网络不稳定的原因，请大家自备魔法上网
+**在浏览器中，我们需要打开这个网页，https://hub.docker.com/，由于国内网络不稳定的原因，请大家自备魔法上网**
 
-按照图片所示，搜索你需要的镜像名称，图片中是以Alist举例，输入你需要的镜像名称后回车即可
+**按照图片所示，搜索你需要的镜像名称，图片中是以Alist举例，输入你需要的镜像名称后回车即可**
 ![https://hub.docker.com/](https://tc.xinju.eu/lc/2024/10/03/66fe84f9825ce.webp)
-然后找到你需要的镜像地址，点击进去，图片以Alist举例
+**然后找到你需要的镜像地址，点击进去，图片以Alist举例**
 ![Alist举例](https://tc.xinju.eu/lc/2024/10/03/66fe85a00c660.webp)
-进入过后，在项目地址的左上方或者右下方的Docker Pull中复制项目地址，项目地址一般都是以xxx/xxx的形式表现
+**进入过后，在项目地址的左上方或者右下方的Docker Pull中复制项目地址，项目地址一般都是以xxx/xxx的形式表现**
 ![Docker Pull中复制项目地址](https://tc.xinju.eu/lc/2024/10/03/66fe86314720f.webp)
-得到项目地址过后，用镜像源和项目地址拼接下载镜像，以文档中提到的镜像地址举例
+**得到项目地址过后，用镜像源和项目地址拼接下载镜像，以文档中提到的镜像地址举例**
 
-拼接过后的下载地址：https://fsu.hub.xinju.eu/xhofe/alist
+**拼接过后的下载地址：https://fsu.hub.xinju.eu/xhofe/alist**
 
-其中xhofe/alist就是https://hub.docker.com中Alist的项目地址，https://fsu.hub.xinju.eu/就是镜像源地址
+**其中xhofe/alist就是https://hub.docker.com中Alist的项目地址，https://fsu.hub.xinju.eu/就是镜像源地址**
 
-然后回到Container Manager中，将拼接过后的地址，填入Hub 页面或存储库 URL中，在点击导入
+**然后回到Container Manager中，将拼接过后的地址，填入Hub 页面或存储库 URL中，在点击导入**
 ![](https://tc.xinju.eu/lc/2024/10/03/66fe835245256.webp)
 
 
@@ -161,39 +161,39 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><strong>群晖设置</strong><br>
-使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager<br>
+<div class="markdown-body" id="postBody"><h3>群晖设置</h3>
+<p><strong>使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/85037c4ce825f0de9096821c32dfe1df01115fc6687a299b88330da5652dab1d/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633535323132663230362e77656270"><img src="https://camo.githubusercontent.com/85037c4ce825f0de9096821c32dfe1df01115fc6687a299b88330da5652dab1d/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633535323132663230362e77656270" alt="套件中心" data-canonical-src="https://tc.xinju.eu/lc/2024/10/02/66fc55212f206.webp" style="max-width: 100%;"></a><br>
-按照以下操作设置注册表<br>
+<strong>按照以下操作设置注册表</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1fbf9849a5aec79991495d6cf657d9e4d41fca562ca79d00b465f7215f25656a/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633536383732353932642e77656270"><img src="https://camo.githubusercontent.com/1fbf9849a5aec79991495d6cf657d9e4d41fca562ca79d00b465f7215f25656a/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633536383732353932642e77656270" alt="注册表" data-canonical-src="https://tc.xinju.eu/lc/2024/10/02/66fc56872592d.webp" style="max-width: 100%;"></a><br>
-点击新增<br>
+<strong>点击新增</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b685aeb7e55667e18bca9769daec944cec904638981c585b676deace5fb797a8/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633538376234643939312e77656270"><img src="https://camo.githubusercontent.com/b685aeb7e55667e18bca9769daec944cec904638981c585b676deace5fb797a8/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633538376234643939312e77656270" alt="新增" data-canonical-src="https://tc.xinju.eu/lc/2024/10/02/66fc587b4d991.webp" style="max-width: 100%;"></a><br>
-设置注册表名称以及注册表URL，用户名及密码留空，最后点击应用</p>
-<p>注册表地址，请联系网站管理员获取</p>
-<p>可用注册表：<a href="https://fsu.hub.xinju.eu" rel="nofollow">https://fsu.hub.xinju.eu</a><br>
+<strong>设置注册表名称以及注册表URL，用户名及密码留空，最后点击应用</strong></p>
+<p><strong>注册表地址，请联系网站管理员获取</strong></p>
+<p><strong>可用注册表：<a href="https://fsu.hub.xinju.eu" rel="nofollow">https://fsu.hub.xinju.eu</a></strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/63892cc58b0e5fcbca0ac714e243c6d3c79f4ec9d2b7bcd320b49843e503908c/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633539386336623931372e77656270"><img src="https://camo.githubusercontent.com/63892cc58b0e5fcbca0ac714e243c6d3c79f4ec9d2b7bcd320b49843e503908c/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633539386336623931372e77656270" alt="注册表地址" data-canonical-src="https://tc.xinju.eu/lc/2024/10/02/66fc598c6b917.webp" style="max-width: 100%;"></a><br>
-然后返回选择刚刚新建的注册表，点击使用，然后关闭窗口<br>
+<strong>然后返回选择刚刚新建的注册表，点击使用，然后关闭窗口</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/db05973593a866056cb6c611d839a443f3691d91b3fd2cebdb24f10e97a39d8b/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633563346663626239312e77656270"><img src="https://camo.githubusercontent.com/db05973593a866056cb6c611d839a443f3691d91b3fd2cebdb24f10e97a39d8b/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30322f363666633563346663626239312e77656270" alt="使用" data-canonical-src="https://tc.xinju.eu/lc/2024/10/02/66fc5c4fcbb91.webp" style="max-width: 100%;"></a></p>
-<p><strong>下载镜像</strong><br>
-<em>方法一</em><br>
-在Container Manager中，选择注册表，并在右上角点击搜索，搜索自己需要的镜像，如果有，则可以将镜像下载到本地进行使用，如果没有，请参照方法2<br>
+<h3>下载镜像</h3>
+<p><strong>方法一</strong><br>
+<strong>在Container Manager中，选择注册表，并在右上角点击搜索，搜索自己需要的镜像，如果有，则可以将镜像下载到本地进行使用，如果没有，请参照方法2</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9fe2b25ccc9f9baf6a27d014fc73186d845ce3ff87775a598c766c1d03d43a0b/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653831666563613237322e77656270"><img src="https://camo.githubusercontent.com/9fe2b25ccc9f9baf6a27d014fc73186d845ce3ff87775a598c766c1d03d43a0b/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653831666563613237322e77656270" alt="下载镜像" data-canonical-src="https://tc.xinju.eu/lc/2024/10/03/66fe81feca272.webp" style="max-width: 100%;"></a><br>
-<em>方法二</em><br>
-在Container Manager中，点击映像，依次点击操作，选择导入从URL添加<br>
+<strong>方法二</strong><br>
+<strong>在Container Manager中，点击映像，依次点击操作，选择导入从URL添加</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7a81879652dc1d283ea27db5cd2a4e14b0c2083f82bae1f93b213e0dd77b6c26/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653832646639376632342e77656270"><img src="https://camo.githubusercontent.com/7a81879652dc1d283ea27db5cd2a4e14b0c2083f82bae1f93b213e0dd77b6c26/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653832646639376632342e77656270" alt="从URL添加" data-canonical-src="https://tc.xinju.eu/lc/2024/10/03/66fe82df97f24.webp" style="max-width: 100%;"></a><br>
-在这个界面中，我们需要添加镜像的地址，进行下载，镜像的地址需要按照下面的操作进行获取<br>
+<strong>在这个界面中，我们需要添加镜像的地址，进行下载，镜像的地址需要按照下面的操作进行获取</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bc64412c4ee7c699f11e836dc383dbf1bc57665611a5e88fd3933f37ff1af553/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653833353234353235362e77656270"><img src="https://camo.githubusercontent.com/bc64412c4ee7c699f11e836dc383dbf1bc57665611a5e88fd3933f37ff1af553/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653833353234353235362e77656270" alt="获取" data-canonical-src="https://tc.xinju.eu/lc/2024/10/03/66fe835245256.webp" style="max-width: 100%;"></a><br>
-在浏览器中，我们需要打开这个网页，<a href="https://hub.docker.com/%EF%BC%8C%E7%94%B1%E4%BA%8E%E5%9B%BD%E5%86%85%E7%BD%91%E7%BB%9C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%8E%9F%E5%9B%A0%EF%BC%8C%E8%AF%B7%E5%A4%A7%E5%AE%B6%E8%87%AA%E5%A4%87%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91" rel="nofollow">https://hub.docker.com/，由于国内网络不稳定的原因，请大家自备魔法上网</a></p>
-<p>按照图片所示，搜索你需要的镜像名称，图片中是以Alist举例，输入你需要的镜像名称后回车即可<br>
+<strong>在浏览器中，我们需要打开这个网页，<a href="https://hub.docker.com/%EF%BC%8C%E7%94%B1%E4%BA%8E%E5%9B%BD%E5%86%85%E7%BD%91%E7%BB%9C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%8E%9F%E5%9B%A0%EF%BC%8C%E8%AF%B7%E5%A4%A7%E5%AE%B6%E8%87%AA%E5%A4%87%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91" rel="nofollow">https://hub.docker.com/，由于国内网络不稳定的原因，请大家自备魔法上网</a></strong></p>
+<p><strong>按照图片所示，搜索你需要的镜像名称，图片中是以Alist举例，输入你需要的镜像名称后回车即可</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/698efe5745be17044034bbb0f0a814a0bb41e9075fb4151ffed011b5ca07df8f/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653834663938323563652e77656270"><img src="https://camo.githubusercontent.com/698efe5745be17044034bbb0f0a814a0bb41e9075fb4151ffed011b5ca07df8f/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653834663938323563652e77656270" alt="https://hub.docker.com/" data-canonical-src="https://tc.xinju.eu/lc/2024/10/03/66fe84f9825ce.webp" style="max-width: 100%;"></a><br>
-然后找到你需要的镜像地址，点击进去，图片以Alist举例<br>
+<strong>然后找到你需要的镜像地址，点击进去，图片以Alist举例</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/58a349d83a4d13733217f84d082ae7ead79ab9928fc89f0ef411c57dc5a15feb/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653835613030633636302e77656270"><img src="https://camo.githubusercontent.com/58a349d83a4d13733217f84d082ae7ead79ab9928fc89f0ef411c57dc5a15feb/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653835613030633636302e77656270" alt="Alist举例" data-canonical-src="https://tc.xinju.eu/lc/2024/10/03/66fe85a00c660.webp" style="max-width: 100%;"></a><br>
-进入过后，在项目地址的左上方或者右下方的Docker Pull中复制项目地址，项目地址一般都是以xxx/xxx的形式表现<br>
+<strong>进入过后，在项目地址的左上方或者右下方的Docker Pull中复制项目地址，项目地址一般都是以xxx/xxx的形式表现</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/78b23b2ccab869d73f5b91ed739099b887d11c0db9deaa9603ab2010835d590d/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653836333134373230662e77656270"><img src="https://camo.githubusercontent.com/78b23b2ccab869d73f5b91ed739099b887d11c0db9deaa9603ab2010835d590d/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653836333134373230662e77656270" alt="Docker Pull中复制项目地址" data-canonical-src="https://tc.xinju.eu/lc/2024/10/03/66fe86314720f.webp" style="max-width: 100%;"></a><br>
-得到项目地址过后，用镜像源和项目地址拼接下载镜像，以文档中提到的镜像地址举例</p>
-<p>拼接过后的下载地址：<a href="https://fsu.hub.xinju.eu/xhofe/alist" rel="nofollow">https://fsu.hub.xinju.eu/xhofe/alist</a></p>
-<p>其中xhofe/alist就是<a href="https://hub.docker.com%E4%B8%ADAlist%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80%EF%BC%8Chttps://fsu.hub.xinju.eu/%E5%B0%B1%E6%98%AF%E9%95%9C%E5%83%8F%E6%BA%90%E5%9C%B0%E5%9D%80" rel="nofollow">https://hub.docker.com中Alist的项目地址，https://fsu.hub.xinju.eu/就是镜像源地址</a></p>
-<p>然后回到Container Manager中，将拼接过后的地址，填入Hub 页面或存储库 URL中，在点击导入<br>
+<strong>得到项目地址过后，用镜像源和项目地址拼接下载镜像，以文档中提到的镜像地址举例</strong></p>
+<p><strong>拼接过后的下载地址：<a href="https://fsu.hub.xinju.eu/xhofe/alist" rel="nofollow">https://fsu.hub.xinju.eu/xhofe/alist</a></strong></p>
+<p><strong>其中xhofe/alist就是<a href="https://hub.docker.com%E4%B8%ADAlist%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80%EF%BC%8Chttps://fsu.hub.xinju.eu/%E5%B0%B1%E6%98%AF%E9%95%9C%E5%83%8F%E6%BA%90%E5%9C%B0%E5%9D%80" rel="nofollow">https://hub.docker.com中Alist的项目地址，https://fsu.hub.xinju.eu/就是镜像源地址</a></strong></p>
+<p><strong>然后回到Container Manager中，将拼接过后的地址，填入Hub 页面或存储库 URL中，在点击导入</strong><br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bc64412c4ee7c699f11e836dc383dbf1bc57665611a5e88fd3933f37ff1af553/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653833353234353235362e77656270"><img src="https://camo.githubusercontent.com/bc64412c4ee7c699f11e836dc383dbf1bc57665611a5e88fd3933f37ff1af553/68747470733a2f2f74632e78696e6a752e65752f6c632f323032342f31302f30332f363666653833353234353235362e77656270" alt="" data-canonical-src="https://tc.xinju.eu/lc/2024/10/03/66fe835245256.webp" style="max-width: 100%;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 
