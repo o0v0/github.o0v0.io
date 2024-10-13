@@ -1,3 +1,6 @@
+<!-- ##{"script":"<script src='https://blog.liyifan.xyz/assets/GmeekTOC.js'></script>"}## -->
+<!-- ##{"script":"<script src='https://blog.liyifan.xyz/assets/backtotop.js'></script>"}## -->
+
 Aurora 是一款动漫风格博客主题，基于 Vue 开发，使用开源的 Github Api 服务，开发至今一直以为主题无人问津，近来有人问起如何食用，故忙里偷闲摸一篇简单食用文档。
 
 ![richang](https://pic2.ziyuan.wang/user/0w0/2024/08/we_3c8f107f1779a.png)
