@@ -1,21 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>日常</title><link>https://o0v0.github.io</link><description>我们所度过的每个平凡的日常，也许就是连续发生的奇迹~</description><copyright>日常</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://pic2.ziyuan.wang/user/0w0/2024/09/yu_96a5a492c07f7.png</url><title>avatar</title><link>https://o0v0.github.io</link></image><lastBuildDate>Sun, 13 Oct 2024 06:03:47 +0000</lastBuildDate><managingEditor>日常</managingEditor><ttl>60</ttl><webMaster>日常</webMaster><item><title>群晖 - Docker镜像源使用方法</title><link>https://o0v0.github.io/post/6.html</link><description>## 群晖设置&#13;
-**使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager**&#13;
-**按照以下操作设置注册表**&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>日常</title><link>https://o0v0.github.io</link><description>我们所度过的每个平凡的日常，也许就是连续发生的奇迹~</description><copyright>日常</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://pic2.ziyuan.wang/user/0w0/2024/09/yu_96a5a492c07f7.png</url><title>avatar</title><link>https://o0v0.github.io</link></image><lastBuildDate>Sun, 13 Oct 2024 06:07:55 +0000</lastBuildDate><managingEditor>日常</managingEditor><ttl>60</ttl><webMaster>日常</webMaster><item><title>群晖 - Docker镜像源使用方法</title><link>https://o0v0.github.io/post/6.html</link><description>## 群晖设置&#13;
+**使用电脑在浏览器打开群晖的控制面板，选择套检中心，按一下操作打开，Container Manager 按照以下操作设置注册表**&#13;
 ![注册表](https://tc.xinju.eu/lc/2024/10/02/66fc56872592d.webp)&#13;
 **点击新增**&#13;
 ![新增](https://tc.xinju.eu/lc/2024/10/02/66fc587b4d991.webp)&#13;
 **设置注册表名称以及注册表URL，用户名及密码留空，最后点击应用**&#13;
 &#13;
-**注册表地址，请联系网站管理员获取**&#13;
-&#13;
 **可用注册表：https://fsu.hub.xinju.eu**&#13;
 &#13;
 ## 下载镜像&#13;
-**方法一**&#13;
-**在Container Manager中，选择注册表，并在右上角点击搜索，搜索自己需要的镜像，如果有，则可以将镜像下载到本地进行使用，如果没有，请参照方法2**&#13;
-![下载镜像](https://tc.xinju.eu/lc/2024/10/03/66fe81feca272.webp)&#13;
-**方法二**&#13;
 **在Container Manager中，点击映像，依次点击操作，选择导入从URL添加**&#13;
 ![从URL添加](https://tc.xinju.eu/lc/2024/10/03/66fe82df97f24.webp)&#13;
 **在这个界面中，我们需要添加镜像的地址，进行下载，镜像的地址需要按照下面的操作进行获取**&#13;
